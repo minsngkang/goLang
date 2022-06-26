@@ -23,9 +23,9 @@ func main() {
 	var A, B int;
 	fmt.Fscanln(reader, &T)
 	for i:=0; i<T; i++ {
-		fmt.Fscanln(reader, &A, &B)
-		fmt.Fprint(writer, "Case #" + strconv.Itoa(i+1) +": ")
-		fmt.Fprintln(writer, A+B)
+		fmt.Fscanln(reader, &A, &B) // Fscanln은 \n나올때까지 읽는다.(공백은 쎄미 구분자가 되는 것) 즉 EOF까지 받는것 ㅇㅇ!!
+		fmt.Fprint(writer, "Case #" + strconv.Itoa(i+1) +": ") // Fprint는 \n을 포함하지 않는다
+		fmt.Fprintln(writer, A+B) // Fprintln은 \n을 포함한다 ㅇㅇ!!
 	}   
 }
 
