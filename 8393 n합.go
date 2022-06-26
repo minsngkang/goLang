@@ -30,3 +30,7 @@ func main() {
 	fmt.Fscanln(reader, &N)
 	fmt.Fprintln(writer, strconv.Itoa(summa(N)))
 }
+
+/*
+참고: N팩토리알 https://gobyexample.com/recursion
+*/
