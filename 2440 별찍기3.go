@@ -38,10 +38,10 @@ func main() {
 		// j(공백갯수)+k(별의 갯수) = T(주어진 정수값)
 
 		for j:=0; j<T-i; j++{
-			writer.WriteString("*") //" "를 싹다 쑤셔박어
+			writer.WriteString("*") //"*"를 싹다 쑤셔박어
 		}
 		// for k:=0; k<i; k++{
-		// 	writer.WriteString(" ") //*를 싹다 쑤셔박어
+		// 	writer.WriteString(" ") // 를 싹다 쑤셔박어
 		// }
 		writer.WriteString("\n") // 포룹하나 끝나면 개행문자첨부해서 추력해.
 
