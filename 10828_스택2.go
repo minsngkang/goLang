@@ -16,7 +16,7 @@ var writer *bufio.Writer = bufio.NewWriter(os.Stdout)
 
 // 글로발 배열스택 ㅇㅇ;;
 var data [10000]int; // 스택은 일차원배열 하나로 구현할 수 있다 ㅇㅇ!!
-var size int = 0;
+var size int = 0; // 핵심은 이거다. 다 값들이 있을수 있지만 화살표를 사용해서 마지막 자리를 가리키는 곳만 변경시키는 것.
 
 func Push(num int) {
 	// 	need type assertion ::num interface{} :: int대신 interface{}를 넣으면 타입에러가 뜬다
